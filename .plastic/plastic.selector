@@ -1,0 +1,3 @@
+repository "2D Top Down@CJ115@cloud"
+  path "/"
+    smartbranch "/main/Alpha Build"

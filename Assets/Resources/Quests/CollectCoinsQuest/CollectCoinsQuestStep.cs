@@ -23,7 +23,7 @@ public class CollectCoinsQuestStep : QuestStep
         if (coinsCollected < coinsToComplete)
         {
             coinsCollected++;
-            // UpdateState();
+            UpdateState();
         }
 
         if (coinsCollected >= coinsToComplete)
@@ -32,5 +32,9 @@ public class CollectCoinsQuestStep : QuestStep
         }
     }
 
-
+    private void UpdateState()
+    {
+        string state = coinsCollected.ToString();
+        ChangeState(state);
+    }
 }

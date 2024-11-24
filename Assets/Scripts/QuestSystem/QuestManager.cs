@@ -19,6 +19,8 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onAdvanceQuest += AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest += FinishQuest;
 
+        GameEventsManager.instance.questEvents.onQuestStepStateChange += QuestStepStateChange;
+
         GameEventsManager.instance.playerEvents.onPlayerLevelChange += PlayerLevelChange;
     }
 
@@ -28,10 +30,13 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onAdvanceQuest -= AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest -= FinishQuest;
 
+        GameEventsManager.instance.questEvents.onQuestStepStateChange -= QuestStepStateChange;
+
         GameEventsManager.instance.playerEvents.onPlayerLevelChange -= PlayerLevelChange;
     }
 
-    private void Start(){
+    private void Start()
+    {
         foreach (Quest quest in questMap.Values)
         {
             GameEventsManager.instance.questEvents.QuestStateChange(quest);
@@ -40,9 +45,9 @@ public class QuestManager : MonoBehaviour
 
     private void ChangeQuestState(string id, QuestState state)
     {
-       Quest quest = GetQuestById(id);
-       quest.state = state;
-       GameEventsManager.instance.questEvents.QuestStateChange(quest);
+        Quest quest = GetQuestById(id);
+        quest.state = state;
+        GameEventsManager.instance.questEvents.QuestStateChange(quest);
     }
 
     private void PlayerLevelChange(int newLevel)
@@ -73,7 +78,7 @@ public class QuestManager : MonoBehaviour
         foreach (Quest quest in questMap.Values)
         {
             if (quest.state == QuestState.REQUIREMENTS_NOT_MET && CheckRequirementsMet(quest))
-            {      
+            {
                 ChangeQuestState(quest.info.id, QuestState.CAN_START);
             }
         }
@@ -115,6 +120,13 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.playerEvents.ExperienceGained(quest.info.experienceReward);
     }
 
+    private void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)
+    {
+        Quest quest = GetQuestById(id);
+        quest.StoreQuestStepState(questStepState, stepIndex);
+        ChangeQuestState(id, quest.state);
+    }
+
     private Dictionary<string, Quest> CreateQuestMap()
     {
         QuestInfoSO[] allQuests = Resources.LoadAll<QuestInfoSO>("Quests");
@@ -139,4 +151,21 @@ public class QuestManager : MonoBehaviour
         }
         return quest;
     }
+
+    private void OnApplicationQuit()
+    {
+
+        foreach (Quest quest in questMap.Values)
+        {
+            QuestData questData = quest.GetQuestData();
+            Debug.Log(quest.info.id);
+            Debug.Log("state = " + questData.state);
+            Debug.Log("index = " + questData.questStepIndex);
+            foreach (QuestStepState stepState in questData.questStepStates)
+            {
+                Debug.Log("step state = " + stepState.state);
+            }
+        }
+    }
 }
+
