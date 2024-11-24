@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,8 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
-    [SerializeField] private Text stepCounterText;
-    [SerializeField] private GameObject Sword; 
+    [SerializeField] private GameObject Sword;
     [SerializeField] private DialogueUI dialogueUI;
 
     public DialogueUI DialogueUI => dialogueUI;
@@ -41,7 +41,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        playerControls.Movement.Dash.performed += _ => Dash();
+        playerControls.Gameplay.Dash.performed += _ => Dash();
+        playerControls.Gameplay.Submit.performed += OnSubmit;
     }
 
     private void OnEnable()
@@ -101,10 +102,9 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene("TestTele");
     }
 
-
     private void PlayerInput()
     {
-        movement = playerControls.Movement.Move.ReadValue<Vector2>();
+        movement = playerControls.Gameplay.Move.ReadValue<Vector2>();
 
         myAnimator.SetFloat("moveX", movement.x);
         myAnimator.SetFloat("moveY", movement.y);
@@ -162,4 +162,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnSubmit(InputAction.CallbackContext context)
+    {
+        GameEventsManager.instance.inputEvents.SubmitPressed();
+    }
 }

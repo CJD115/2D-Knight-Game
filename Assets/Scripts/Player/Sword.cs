@@ -37,8 +37,8 @@ public class Sword : MonoBehaviour
 
     void Start()
     {
-        playerControls.Combat.Attack.started += _ => StartAttacking();
-        playerControls.Combat.Attack.canceled += _ => StopAttacking();
+        playerControls.Gameplay.Attack.started += _ => StartAttacking();
+        playerControls.Gameplay.Attack.canceled += _ => StopAttacking();
     }
 
     private void Update()

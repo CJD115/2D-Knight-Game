@@ -24,14 +24,23 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     ""name"": ""PlayerControls"",
     ""maps"": [
         {
-            ""name"": ""Movement"",
-            ""id"": ""db78f6a8-4f1b-42d2-a80d-0dea9bbda635"",
+            ""name"": ""Gameplay"",
+            ""id"": ""0b0128e6-080f-4688-8a9d-f4ec3989ab40"",
             ""actions"": [
                 {
-                    ""name"": ""Move"",
-                    ""type"": ""PassThrough"",
-                    ""id"": ""92bd474f-d2cc-47bc-b821-99f22d9d7378"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""name"": ""Submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""75fb2ffa-e93c-406e-b4fb-f13e493d0b53"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""1d7c8409-0dbe-4c8a-bae8-f19c91329378"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -39,8 +48,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Dash"",
                     ""type"": ""Button"",
-                    ""id"": ""c0a4ca61-8b72-4b16-9cbd-3b3a06d09ab0"",
+                    ""id"": ""fd420f22-4561-4227-bfcd-6b9cb671a939"",
                     ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""e09eccd9-040e-4dd0-b8aa-9a71c744f293"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -48,8 +66,52 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
+                    ""name"": """",
+                    ""id"": ""3b803cb2-3d9c-44ed-ae2f-7f830cba7bfc"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c2b99e8-45ec-4a65-aa14-24827b251327"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""972894be-6e7d-4391-846a-d4afef81fdaa"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c34dfb8-5f3a-4557-8601-e77f5c834a85"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""2D Vector"",
-                    ""id"": ""9fbf88ec-10d9-4a12-8065-a29a3afd9530"",
+                    ""id"": ""50bfbb59-d324-4539-9e63-77945b93d7af"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -60,7 +122,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""up"",
-                    ""id"": ""83dad7f5-86eb-426f-9f82-27e474fecd38"",
+                    ""id"": ""c3474a7f-e76a-4a8e-b5cd-62e56eb58c77"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -71,7 +133,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""down"",
-                    ""id"": ""528f6e4e-097a-4116-9cd2-f6e3e331df8d"",
+                    ""id"": ""b57fa8a7-02a6-46d3-b8ab-5e39b073c2a6"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -82,7 +144,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""66e9eb8f-52b0-4826-a63a-56f7e9b0d2af"",
+                    ""id"": ""38321965-0cce-414d-b83f-612bcffd8e6a"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -93,7 +155,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""cf8161e6-cc3b-4706-ace1-5041953c3f33"",
+                    ""id"": ""c636a43a-c953-4c9e-867a-0d7390ddd69e"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -101,139 +163,23 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9801993f-0004-49aa-8d66-8739407ed7c7"",
-                    ""path"": ""<Keyboard>/shift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Combat"",
-            ""id"": ""1db664ca-9da1-4dd5-b914-9ef451cdf6e5"",
-            ""actions"": [
-                {
-                    ""name"": ""Attack"",
-                    ""type"": ""Button"",
-                    ""id"": ""ffe72576-ebd0-43ce-bc0c-3e144deab83a"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""41754c94-c9f3-4a08-9807-aaa68930e40c"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Submit"",
-            ""id"": ""4ab2bb3c-6f26-4c49-9ff7-9207b2b88f74"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Value"",
-                    ""id"": ""c472cecb-430e-41d8-8d5c-e87ee67a2dd4"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""6a5974f3-4b47-4a27-ad9b-92087e375599"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ef16fa38-ab88-4cdc-aaca-c77a73455a1f"",
-                    ""path"": ""<Keyboard>/enter"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""QyestLogToggle"",
-            ""id"": ""8437adfc-a229-460e-81dc-4f79d5b1008b"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""b6625bf1-0b51-4b5f-8a1d-af988210a393"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""ef542d55-a563-4869-9cdb-f84dfa39aca6"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // Movement
-        m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
-        m_Movement_Move = m_Movement.FindAction("Move", throwIfNotFound: true);
-        m_Movement_Dash = m_Movement.FindAction("Dash", throwIfNotFound: true);
-        // Combat
-        m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
-        m_Combat_Attack = m_Combat.FindAction("Attack", throwIfNotFound: true);
-        // Submit
-        m_Submit = asset.FindActionMap("Submit", throwIfNotFound: true);
-        m_Submit_Newaction = m_Submit.FindAction("New action", throwIfNotFound: true);
-        // QyestLogToggle
-        m_QyestLogToggle = asset.FindActionMap("QyestLogToggle", throwIfNotFound: true);
-        m_QyestLogToggle_Newaction = m_QyestLogToggle.FindAction("New action", throwIfNotFound: true);
+        // Gameplay
+        m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
+        m_Gameplay_Submit = m_Gameplay.FindAction("Submit", throwIfNotFound: true);
+        m_Gameplay_Attack = m_Gameplay.FindAction("Attack", throwIfNotFound: true);
+        m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
+        m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
     {
-        UnityEngine.Debug.Assert(!m_Movement.enabled, "This will cause a leak and performance issues, PlayerControls.Movement.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Combat.enabled, "This will cause a leak and performance issues, PlayerControls.Combat.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Submit.enabled, "This will cause a leak and performance issues, PlayerControls.Submit.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_QyestLogToggle.enabled, "This will cause a leak and performance issues, PlayerControls.QyestLogToggle.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Gameplay.enabled, "This will cause a leak and performance issues, PlayerControls.Gameplay.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -292,212 +238,80 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Movement
-    private readonly InputActionMap m_Movement;
-    private List<IMovementActions> m_MovementActionsCallbackInterfaces = new List<IMovementActions>();
-    private readonly InputAction m_Movement_Move;
-    private readonly InputAction m_Movement_Dash;
-    public struct MovementActions
+    // Gameplay
+    private readonly InputActionMap m_Gameplay;
+    private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
+    private readonly InputAction m_Gameplay_Submit;
+    private readonly InputAction m_Gameplay_Attack;
+    private readonly InputAction m_Gameplay_Dash;
+    private readonly InputAction m_Gameplay_Move;
+    public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
-        public MovementActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Movement_Move;
-        public InputAction @Dash => m_Wrapper.m_Movement_Dash;
-        public InputActionMap Get() { return m_Wrapper.m_Movement; }
+        public GameplayActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Submit => m_Wrapper.m_Gameplay_Submit;
+        public InputAction @Attack => m_Wrapper.m_Gameplay_Attack;
+        public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
+        public InputAction @Move => m_Wrapper.m_Gameplay_Move;
+        public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MovementActions set) { return set.Get(); }
-        public void AddCallbacks(IMovementActions instance)
+        public static implicit operator InputActionMap(GameplayActions set) { return set.Get(); }
+        public void AddCallbacks(IGameplayActions instance)
         {
-            if (instance == null || m_Wrapper.m_MovementActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_MovementActionsCallbackInterfaces.Add(instance);
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
-            @Dash.started += instance.OnDash;
-            @Dash.performed += instance.OnDash;
-            @Dash.canceled += instance.OnDash;
-        }
-
-        private void UnregisterCallbacks(IMovementActions instance)
-        {
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
-            @Dash.started -= instance.OnDash;
-            @Dash.performed -= instance.OnDash;
-            @Dash.canceled -= instance.OnDash;
-        }
-
-        public void RemoveCallbacks(IMovementActions instance)
-        {
-            if (m_Wrapper.m_MovementActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IMovementActions instance)
-        {
-            foreach (var item in m_Wrapper.m_MovementActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_MovementActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public MovementActions @Movement => new MovementActions(this);
-
-    // Combat
-    private readonly InputActionMap m_Combat;
-    private List<ICombatActions> m_CombatActionsCallbackInterfaces = new List<ICombatActions>();
-    private readonly InputAction m_Combat_Attack;
-    public struct CombatActions
-    {
-        private @PlayerControls m_Wrapper;
-        public CombatActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Attack => m_Wrapper.m_Combat_Attack;
-        public InputActionMap Get() { return m_Wrapper.m_Combat; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(CombatActions set) { return set.Get(); }
-        public void AddCallbacks(ICombatActions instance)
-        {
-            if (instance == null || m_Wrapper.m_CombatActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_CombatActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_GameplayActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Add(instance);
+            @Submit.started += instance.OnSubmit;
+            @Submit.performed += instance.OnSubmit;
+            @Submit.canceled += instance.OnSubmit;
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
         }
 
-        private void UnregisterCallbacks(ICombatActions instance)
+        private void UnregisterCallbacks(IGameplayActions instance)
         {
+            @Submit.started -= instance.OnSubmit;
+            @Submit.performed -= instance.OnSubmit;
+            @Submit.canceled -= instance.OnSubmit;
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
         }
 
-        public void RemoveCallbacks(ICombatActions instance)
+        public void RemoveCallbacks(IGameplayActions instance)
         {
-            if (m_Wrapper.m_CombatActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_GameplayActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(ICombatActions instance)
+        public void SetCallbacks(IGameplayActions instance)
         {
-            foreach (var item in m_Wrapper.m_CombatActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_GameplayActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_CombatActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_GameplayActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public CombatActions @Combat => new CombatActions(this);
-
-    // Submit
-    private readonly InputActionMap m_Submit;
-    private List<ISubmitActions> m_SubmitActionsCallbackInterfaces = new List<ISubmitActions>();
-    private readonly InputAction m_Submit_Newaction;
-    public struct SubmitActions
+    public GameplayActions @Gameplay => new GameplayActions(this);
+    public interface IGameplayActions
     {
-        private @PlayerControls m_Wrapper;
-        public SubmitActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Submit_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_Submit; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(SubmitActions set) { return set.Get(); }
-        public void AddCallbacks(ISubmitActions instance)
-        {
-            if (instance == null || m_Wrapper.m_SubmitActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_SubmitActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
-        }
-
-        private void UnregisterCallbacks(ISubmitActions instance)
-        {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
-        }
-
-        public void RemoveCallbacks(ISubmitActions instance)
-        {
-            if (m_Wrapper.m_SubmitActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(ISubmitActions instance)
-        {
-            foreach (var item in m_Wrapper.m_SubmitActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_SubmitActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public SubmitActions @Submit => new SubmitActions(this);
-
-    // QyestLogToggle
-    private readonly InputActionMap m_QyestLogToggle;
-    private List<IQyestLogToggleActions> m_QyestLogToggleActionsCallbackInterfaces = new List<IQyestLogToggleActions>();
-    private readonly InputAction m_QyestLogToggle_Newaction;
-    public struct QyestLogToggleActions
-    {
-        private @PlayerControls m_Wrapper;
-        public QyestLogToggleActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_QyestLogToggle_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_QyestLogToggle; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(QyestLogToggleActions set) { return set.Get(); }
-        public void AddCallbacks(IQyestLogToggleActions instance)
-        {
-            if (instance == null || m_Wrapper.m_QyestLogToggleActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_QyestLogToggleActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
-        }
-
-        private void UnregisterCallbacks(IQyestLogToggleActions instance)
-        {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
-        }
-
-        public void RemoveCallbacks(IQyestLogToggleActions instance)
-        {
-            if (m_Wrapper.m_QyestLogToggleActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IQyestLogToggleActions instance)
-        {
-            foreach (var item in m_Wrapper.m_QyestLogToggleActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_QyestLogToggleActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public QyestLogToggleActions @QyestLogToggle => new QyestLogToggleActions(this);
-    public interface IMovementActions
-    {
-        void OnMove(InputAction.CallbackContext context);
-        void OnDash(InputAction.CallbackContext context);
-    }
-    public interface ICombatActions
-    {
+        void OnSubmit(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
-    }
-    public interface ISubmitActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
-    }
-    public interface IQyestLogToggleActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
     }
 }

@@ -12,5 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TestTele.unity
     guid: 1975030ea69433747a86c579efa10864
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: 60a03ff66c575f744babcdceef59c932, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 93cd279146c519a4e8e75f159e1f5c5a, type: 3}
   m_UseUCBPForAssetBundles: 0
