@@ -10,6 +10,10 @@ public abstract class QuestStep : MonoBehaviour
     {
         this.questId = questId;
         this.stepIndex = stepIndex;
+        if (questStepState != null && questStepState != "")
+        {
+            SetQuestStepState(questStepState);
+        }
     }
 
     protected void FinishQuestStep()
@@ -28,4 +32,6 @@ public abstract class QuestStep : MonoBehaviour
     {
         GameEventsManager.instance.questEvents.QuestStepStateChange(questId, stepIndex, new QuestStepState(newState));
     }
+
+    protected abstract void SetQuestStepState(string state);
 }

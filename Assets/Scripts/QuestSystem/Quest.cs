@@ -22,6 +22,19 @@ public class Quest
         }
     }
 
+    public Quest(QuestInfoSO questInfo, QuestState questState, int currentQuestStepIndex, QuestStepState[] questStepStates)
+    {
+        this.info = questInfo;
+        this.state = questState;
+        this.currentQuestStepIndex = currentQuestStepIndex;
+        this.questStepStates = questStepStates;
+
+        if (this.questStepStates.Length != this.info.questStepPrefabs.Length)
+        {
+            Debug.LogWarning("Quest step states array length does not match quest step prefabs array length for quest: " + this.info.id);
+        }
+    }
+
     public void MoveToNextStep()
     {
         currentQuestStepIndex++;
