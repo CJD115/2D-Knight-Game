@@ -18,7 +18,7 @@ public class Quest
         this.questStepStates = new QuestStepState[info.questStepPrefabs.Length];
         for (int i = 0; i < questStepStates.Length; i++)
         {
-            questStepStates[i] = new QuestStepState("");
+            questStepStates[i] = new QuestStepState();
         }
     }
 
@@ -77,6 +77,7 @@ public class Quest
         if (stepIndex < questStepStates.Length)
         {
             questStepStates[stepIndex].state = questStepState.state;
+            questStepStates[stepIndex].status = questStepState.status;
         }
         else
         {
@@ -90,6 +91,43 @@ public class Quest
         return new QuestData(state, currentQuestStepIndex, questStepStates);
     }
 
+    public string GetFullStatusText()
+    {
+        string fullStatus = "";
+
+        if (state == QuestState.REQUIREMENTS_NOT_MET)
+        {
+            fullStatus = "Requirements are not yet met to start this quest.";
+        }
+        else if (state == QuestState.CAN_START)
+        {
+            fullStatus = "This quest can be started!";
+        }
+        else
+        {
+            // display all previous quests with strikethroughs
+            for (int i = 0; i < currentQuestStepIndex; i++)
+            {
+                fullStatus += "<s>" + questStepStates[i].status + "</s>\n";
+            }
+            // display the current step, if it exists
+            if (CurrentStepExists())
+            {
+                fullStatus += questStepStates[currentQuestStepIndex].status;
+            }
+            // when the quest is completed or turned in
+            if (state == QuestState.CAN_FINISH)
+            {
+                fullStatus += "The quest is ready to be turned in.";
+            }
+            else if (state == QuestState.FINISHED)
+            {
+                fullStatus += "The quest has been completed!";
+            }
+        }
+
+        return fullStatus;
+    }
 }
 
 

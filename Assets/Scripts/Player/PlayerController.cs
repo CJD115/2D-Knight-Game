@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         playerControls.Gameplay.Dash.performed += _ => Dash();
         playerControls.Gameplay.Submit.performed += OnSubmit;
+        playerControls.Gameplay.QuestLogToggle.performed += _ => GameEventsManager.instance.inputEvents.QuestLogTogglePressed();
     }
 
     private void OnEnable()
@@ -166,4 +167,22 @@ public class PlayerController : MonoBehaviour
     {
         GameEventsManager.instance.inputEvents.SubmitPressed();
     }
+
+    // public event Action onDisablePlayerMovement;
+    // public void DisablePlayerMovement()
+    // {
+    //     if (onDisablePlayerMovement != null)
+    //     {
+    //         onDisablePlayerMovement();
+    //     }
+    // }
+
+    // public event Action onEnablePlayerMovement;
+    // public void EnablePlayerMovement()
+    // {
+    //     if (onEnablePlayerMovement != null)
+    //     {
+    //         onEnablePlayerMovement();
+    //     }
+    // }
 }

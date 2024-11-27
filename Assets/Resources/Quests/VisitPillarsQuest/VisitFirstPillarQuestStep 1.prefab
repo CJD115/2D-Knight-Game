@@ -81,3 +81,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854eded688116b54eb26a052229601cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pillarNumberString: First
