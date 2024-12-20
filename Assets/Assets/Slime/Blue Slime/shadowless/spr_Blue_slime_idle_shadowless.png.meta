@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -259,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_Blue_slime_idle_shadowless_0: 492553918043663835
+      spr_Blue_slime_idle_shadowless_1: -8936358202842396415
+      spr_Blue_slime_idle_shadowless_2: -7799830453453564913
+      spr_Blue_slime_idle_shadowless_3: 9144623239960893097
+      spr_Blue_slime_idle_shadowless_4: -3941246189462992593
+      spr_Blue_slime_idle_shadowless_5: 9135671421383481450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

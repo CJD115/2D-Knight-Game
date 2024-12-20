@@ -783,6 +783,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -5859,7 +5872,237 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Characters fullsheet_0: 809637628899331135
+      Characters fullsheet_1: -532513738078616416
+      Characters fullsheet_10: -6528027483320977127
+      Characters fullsheet_100: 5006078253775229904
+      Characters fullsheet_101: 4539552465966334602
+      Characters fullsheet_102: 4927773534079451477
+      Characters fullsheet_103: 4834034430656247439
+      Characters fullsheet_104: 567242813260344362
+      Characters fullsheet_105: -7683596804586648956
+      Characters fullsheet_106: -933529503476581452
+      Characters fullsheet_107: 6880690883829550471
+      Characters fullsheet_108: -2575677001470967127
+      Characters fullsheet_109: -1357302470843438551
+      Characters fullsheet_11: -1510141131197727452
+      Characters fullsheet_110: -7788830701956613739
+      Characters fullsheet_111: -8928018770409627545
+      Characters fullsheet_112: 5787467265475960802
+      Characters fullsheet_113: -3696109914948192545
+      Characters fullsheet_114: -9163896718714625581
+      Characters fullsheet_115: -4440982111537878061
+      Characters fullsheet_116: 3387332993738682493
+      Characters fullsheet_117: -2630210544404723968
+      Characters fullsheet_118: -7581580750577975407
+      Characters fullsheet_119: -2979555129827858957
+      Characters fullsheet_12: -8254714056786283627
+      Characters fullsheet_120: -3103643387867129558
+      Characters fullsheet_121: 5293184073163435867
+      Characters fullsheet_122: -3769171452245311212
+      Characters fullsheet_123: 28455909445274540
+      Characters fullsheet_124: -5379325885364636562
+      Characters fullsheet_125: -6146851305820935910
+      Characters fullsheet_126: -2985455446286724628
+      Characters fullsheet_127: 7242014491450195066
+      Characters fullsheet_128: 5344306421160696660
+      Characters fullsheet_129: 4524787158891525404
+      Characters fullsheet_13: -8377078285673766148
+      Characters fullsheet_130: -1876262114806860048
+      Characters fullsheet_131: 4500057108440940794
+      Characters fullsheet_132: -3619040623175912625
+      Characters fullsheet_133: 5342248912342874811
+      Characters fullsheet_134: 4603716247762976648
+      Characters fullsheet_135: 18571099929544883
+      Characters fullsheet_136: 5181755250700369501
+      Characters fullsheet_137: -1646002251120465706
+      Characters fullsheet_138: 970738555572227095
+      Characters fullsheet_139: 4816982806093295510
+      Characters fullsheet_14: -9173565227825143984
+      Characters fullsheet_140: 4544905508416709937
+      Characters fullsheet_141: 8482542754959822453
+      Characters fullsheet_142: -2401366353588566892
+      Characters fullsheet_143: -9106846555630607262
+      Characters fullsheet_144: -8643221881615205856
+      Characters fullsheet_145: 8475428631093538822
+      Characters fullsheet_146: -5055680310852519050
+      Characters fullsheet_147: -7906452124519854813
+      Characters fullsheet_148: 8158582822724532163
+      Characters fullsheet_149: 5698353046221757442
+      Characters fullsheet_15: -5030330553893179978
+      Characters fullsheet_150: -6198757849655957868
+      Characters fullsheet_151: 8789519158497065803
+      Characters fullsheet_152: -7158378581508043405
+      Characters fullsheet_153: 1055295314868865172
+      Characters fullsheet_154: -1826882002438764720
+      Characters fullsheet_155: 854677807394207743
+      Characters fullsheet_156: -3153789040591544548
+      Characters fullsheet_157: 8183007861281063542
+      Characters fullsheet_158: 4405229233148326913
+      Characters fullsheet_159: -5224015872863713859
+      Characters fullsheet_16: -5123016935765908565
+      Characters fullsheet_160: -124490646388939976
+      Characters fullsheet_161: 6707215744185023808
+      Characters fullsheet_162: -6257735943272854749
+      Characters fullsheet_163: 8940332632143000301
+      Characters fullsheet_164: 3170840760966219093
+      Characters fullsheet_165: -2527740799150883249
+      Characters fullsheet_166: -303870683275344829
+      Characters fullsheet_167: -3812776696061104593
+      Characters fullsheet_168: 3544911499082543113
+      Characters fullsheet_169: -3856547459170808057
+      Characters fullsheet_17: -9190185203238905809
+      Characters fullsheet_170: -7342731395072013280
+      Characters fullsheet_171: 3683174545414431315
+      Characters fullsheet_172: -2008054783022406309
+      Characters fullsheet_173: -5019288922776045530
+      Characters fullsheet_174: -5161937198837406104
+      Characters fullsheet_175: -6464737316369171921
+      Characters fullsheet_176: -7485809690116518543
+      Characters fullsheet_177: 3539025412453081623
+      Characters fullsheet_178: 3880370560213924623
+      Characters fullsheet_179: -961036775445731902
+      Characters fullsheet_18: 1634275508315558895
+      Characters fullsheet_180: 5862853821404614950
+      Characters fullsheet_181: 138413504962131044
+      Characters fullsheet_182: -6475809116709157720
+      Characters fullsheet_183: 2525499259287287164
+      Characters fullsheet_184: 4280235997688903642
+      Characters fullsheet_185: 1602913941130671868
+      Characters fullsheet_186: 2134402081810890498
+      Characters fullsheet_187: 4896517973561447516
+      Characters fullsheet_188: 3723282818122449410
+      Characters fullsheet_189: -3048708597753473980
+      Characters fullsheet_19: -46330446206772492
+      Characters fullsheet_190: -4640923248957271905
+      Characters fullsheet_191: -5909558058130387517
+      Characters fullsheet_192: -6670998612863210687
+      Characters fullsheet_193: -3492609125906029164
+      Characters fullsheet_194: -6575940867691489303
+      Characters fullsheet_195: -1416560556859851485
+      Characters fullsheet_196: 9116304788257078143
+      Characters fullsheet_197: 822984929673175786
+      Characters fullsheet_198: -6644687417052874526
+      Characters fullsheet_199: -4968117508467506648
+      Characters fullsheet_2: -7397022826940632567
+      Characters fullsheet_20: 5352303087835031567
+      Characters fullsheet_200: 2603612966990446475
+      Characters fullsheet_201: -2762150122345548962
+      Characters fullsheet_202: -9021694012003756561
+      Characters fullsheet_203: -7488850960348654068
+      Characters fullsheet_204: -1147590996170640352
+      Characters fullsheet_205: -2601779532459388871
+      Characters fullsheet_206: -8548848978176472262
+      Characters fullsheet_207: 2869975997990445890
+      Characters fullsheet_208: -3797322360469179400
+      Characters fullsheet_209: 4346923071225856893
+      Characters fullsheet_21: 5337621016211807475
+      Characters fullsheet_210: 5777214359570804853
+      Characters fullsheet_211: 1449726808821697981
+      Characters fullsheet_212: 5386111495863213640
+      Characters fullsheet_213: -7970385995838227103
+      Characters fullsheet_214: 7187273662538193703
+      Characters fullsheet_215: -1748022081246233409
+      Characters fullsheet_216: 2409662618567351142
+      Characters fullsheet_217: -2622628020290645485
+      Characters fullsheet_218: 7139082861076421762
+      Characters fullsheet_219: 342170021864248583
+      Characters fullsheet_22: 241314038042259804
+      Characters fullsheet_220: -9217308714031652060
+      Characters fullsheet_221: 2184328851920325157
+      Characters fullsheet_222: -313710749643878210
+      Characters fullsheet_223: -5808848046122421093
+      Characters fullsheet_224: -5092921131097211310
+      Characters fullsheet_225: 8249509856969259971
+      Characters fullsheet_226: -1443762289269688869
+      Characters fullsheet_227: -8707956426364370976
+      Characters fullsheet_228: -2491560508538654961
+      Characters fullsheet_229: 581166307453434017
+      Characters fullsheet_23: -3630521022946000404
+      Characters fullsheet_24: 6754784247421545114
+      Characters fullsheet_25: 611022586987914474
+      Characters fullsheet_26: 8714647569199343500
+      Characters fullsheet_27: -1528629082918737710
+      Characters fullsheet_28: 4296526308747845818
+      Characters fullsheet_29: -5421842547166150754
+      Characters fullsheet_3: 891103038080840437
+      Characters fullsheet_30: -2867498736127021263
+      Characters fullsheet_31: 5342225747972773640
+      Characters fullsheet_32: -7758208174678866317
+      Characters fullsheet_33: 2577600274082544642
+      Characters fullsheet_34: 4236640905690230222
+      Characters fullsheet_35: -7689666503540918021
+      Characters fullsheet_36: -8955694749013366815
+      Characters fullsheet_37: 5391006395259636433
+      Characters fullsheet_38: 1261796415101400759
+      Characters fullsheet_39: -843309548183241469
+      Characters fullsheet_4: 7755815392626428048
+      Characters fullsheet_40: 1319956551078585879
+      Characters fullsheet_41: 5878287357557028297
+      Characters fullsheet_42: 6093332400211577490
+      Characters fullsheet_43: 8490186750144093694
+      Characters fullsheet_44: -2608893988485973209
+      Characters fullsheet_45: 5192805426858565741
+      Characters fullsheet_46: 561267795044836141
+      Characters fullsheet_47: -1130823609904396256
+      Characters fullsheet_48: 5996027716812964802
+      Characters fullsheet_49: 3037513550792489361
+      Characters fullsheet_5: -4746495493432033892
+      Characters fullsheet_50: -6595113950728871005
+      Characters fullsheet_51: -2030471122626566771
+      Characters fullsheet_52: 6106396324193317798
+      Characters fullsheet_53: 1626202258933872233
+      Characters fullsheet_54: -3714884083050531577
+      Characters fullsheet_55: 6469729131392874949
+      Characters fullsheet_56: -7178883834671207521
+      Characters fullsheet_57: 7509676728448768988
+      Characters fullsheet_58: 7682057344082735690
+      Characters fullsheet_59: -7495081188976477082
+      Characters fullsheet_6: -6147883341861162699
+      Characters fullsheet_60: -4769709038266064136
+      Characters fullsheet_61: 4863830937707018675
+      Characters fullsheet_62: 3619732293811513533
+      Characters fullsheet_63: 1281035917257177304
+      Characters fullsheet_64: -4804427886459001306
+      Characters fullsheet_65: -3171842150954355914
+      Characters fullsheet_66: -1838921576075385121
+      Characters fullsheet_67: -6659910603839405208
+      Characters fullsheet_68: 3559895018771593554
+      Characters fullsheet_69: -7321491879126362355
+      Characters fullsheet_7: 1983837988600280558
+      Characters fullsheet_70: 9046677716045975854
+      Characters fullsheet_71: 4852424704007180904
+      Characters fullsheet_72: -426349718084084219
+      Characters fullsheet_73: 7554912271840151563
+      Characters fullsheet_74: 6414272377042635014
+      Characters fullsheet_75: 3364896410040386012
+      Characters fullsheet_76: -2548435306579581871
+      Characters fullsheet_77: 6386897775052393678
+      Characters fullsheet_78: -6391951646864717036
+      Characters fullsheet_79: 5330707346475908480
+      Characters fullsheet_8: 1382059398858022340
+      Characters fullsheet_80: 8875043820846434612
+      Characters fullsheet_81: -2542866756006587630
+      Characters fullsheet_82: -5597678992152180784
+      Characters fullsheet_83: 7625496255962247894
+      Characters fullsheet_84: 5388231959910714034
+      Characters fullsheet_85: -1610986035566079126
+      Characters fullsheet_86: -2864788597398527452
+      Characters fullsheet_87: -6287274528912581197
+      Characters fullsheet_88: 661273646419771297
+      Characters fullsheet_89: 7756182846494433849
+      Characters fullsheet_9: -6961960803437599854
+      Characters fullsheet_90: 4261621880219171085
+      Characters fullsheet_91: 2340884196932980191
+      Characters fullsheet_92: 1723410392334471557
+      Characters fullsheet_93: -7882776118634749449
+      Characters fullsheet_94: -683486859978932488
+      Characters fullsheet_95: 2280995253794844
+      Characters fullsheet_96: -5231072551443434149
+      Characters fullsheet_97: -5141163168414020025
+      Characters fullsheet_98: -3843484627929249548
+      Characters fullsheet_99: -4263591137916444922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
