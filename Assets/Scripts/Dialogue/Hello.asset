@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c3ab92bd61e004db6f89a07ed3deca, type: 3}
   m_Name: Hello
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - Do you want to save the chicken
+  responses:
+  - responseText: No
+    dialogueObject: {fileID: 11400000, guid: e0351cd97a80bcc46b1473708b082afd, type: 2}
+  - responseText: Yes
+    dialogueObject: {fileID: 11400000, guid: e0351cd97a80bcc46b1473708b082afd, type: 2}
